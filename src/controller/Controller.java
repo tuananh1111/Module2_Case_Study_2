@@ -62,6 +62,9 @@ public class Controller implements Initializable {
     @FXML
     private TextField searchText;
 
+    private final NumberFormat numberFormat= new DecimalFormat("#,###");
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -74,6 +77,17 @@ public class Controller implements Initializable {
         sourceColumn.setCellValueFactory(new PropertyValueFactory<>("source"));
         amountColumn.setCellValueFactory(new PropertyValueFactory<>("amount"));
         priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+        priceColumn.setCellFactory(tc -> new TableCell<Supplement, Integer>() {
+            @Override
+            protected void updateItem(Integer price, boolean empty) {
+                super.updateItem(price, empty);
+                if (price == null || empty) {
+                    setText(null);
+                } else {
+                    setText(numberFormat.format(price));
+                }
+            }
+        });
         table.setItems(supplementList);
         this.search();
     }

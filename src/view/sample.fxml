@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="1136.0" style="-fx-background-color: #ffffd8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="1136.0" style="-fx-background-color: #22985b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
       <TableView fx:id="table" layoutX="62.0" layoutY="121.0" prefHeight="697.0" prefWidth="737.0">
         <columns>
@@ -80,7 +80,7 @@
             <TextField fx:id="priceText" promptText="Price" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
          </children>
       </GridPane>
-      <Text fill="#000607" layoutX="872.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: darkkhaki" text="Sản phẩm">
+      <Text fill="#000607" layoutX="872.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #e5d60f" text="Sản phẩm">
          <font>
             <Font name="Times New Roman Bold" size="43.0" />
          </font>
