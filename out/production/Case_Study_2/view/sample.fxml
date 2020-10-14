@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="1136.0" style="-fx-background-color: #ffffd8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TableView fx:id="table" layoutX="62.0" layoutY="121.0" prefHeight="697.0" prefWidth="737.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="96.0" style="-fx-text-alignment: center" text="Mã sản phẩm" />
+            <TableColumn fx:id="nameColumn" prefWidth="122.0" style="-fx-text-alignment: center" text="Tên sản phẩm" />
+          <TableColumn fx:id="massColumn" prefWidth="128.0" style="-fx-text-alignment: center" text="Khối lượng ( Kg )" />
+            <TableColumn fx:id="sourceColumn" prefWidth="157.0" style="-fx-text-alignment: center" text="Nguồn gốc" />
+            <TableColumn fx:id="amountColumn" prefWidth="70.0" style="-fx-text-alignment: center" text="Số lượng" />
+            <TableColumn fx:id="priceColumn" prefWidth="163.0" style="-fx-text-alignment: center" text="Đơn giá (VND)" />
+        </columns>
+      </TableView>
+      <Text fill="#060317" layoutX="248.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thực Phẩm Bổ Sung">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="847.0" layoutY="183.0" prefHeight="240.0" prefWidth="221.0">
+        <columnConstraints>
+          <ColumnConstraints />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Mã sản phẩm" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Tên sản phẩm" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Khối lượng" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Nguồn gốc" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Số lượng" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Đơn giá" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="idText" promptText="ID" style="-fx-border-color: black; -fx-border-width: 0px 0px 3px 0px; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="nameText" promptText="Name " style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="massText" promptText="Kg" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="sourceText" promptText="Source" style="-fx-border-width: 0px 0px 3px 0px; -fx-border-color: black; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="amountText" promptText="Amount" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="priceText" promptText="Price" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Text fill="#000607" layoutX="872.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: darkkhaki" text="Sản phẩm">
+         <font>
+            <Font name="Times New Roman Bold" size="43.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchText" layoutX="873.0" layoutY="521.0" promptText="search...." />
+       <ImageView fitHeight="233.0" fitWidth="200.0" layoutX="870.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+           <image><Image url="@sup.png" />
+           </image>
+       </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="233.0" layoutX="908.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@ghost.png" />
+          </image>
+      </ImageView>
+      <Text layoutX="875.0" layoutY="838.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Product made by Tuan Anh Nguyen." />
+      <GridPane layoutX="806.0" layoutY="423.0" prefHeight="35.0" prefWidth="337.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="66.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="63.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="125.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="76.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #00ccff;" text="     Thêm" textFill="#111010" />
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #00ccff;" text="    Xóa" textFill="#250f0f" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#writeFile" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #00ccff;" text="       Lưu danh sách" textFill="#250a0a" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#resetText" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #00ccff;" text="      Reset" textFill="#170707" GridPane.columnIndex="3" />
+            <ImageView disable="true" fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../image/61848.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="22.0" fitWidth="28.0" layoutX="79.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/add.jpg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="27.0" fitWidth="22.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@save.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="22.0" fitWidth="22.0" layoutX="149.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../image/reset1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView disable="true" fitHeight="22.0" fitWidth="22.0" layoutX="841.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/search.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="858.0" layoutY="470.0" prefHeight="35.0" prefWidth="204.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#select" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #00ff00;" text="Lựa chọn" />
+            <Button mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #00ff00;" text="  Thay đổi" GridPane.columnIndex="1" />
+            <ImageView disable="true" fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/choose_done_survey_select_feature_choice_tab-512.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../image/reload.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="114.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/unnamed.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
